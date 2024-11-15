@@ -30,6 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Servicio user
 Primero se creo el servicio user.service con el comando de CLI `ng generate service services/user`.
 ![{5CAD6F62-F4E2-4D60-A047-12FA3C9D69CC}](https://github.com/user-attachments/assets/c84f6901-8fce-43ef-8ef7-d8d76aebc930)
+
 Este servicio se usa para obtener los datos de los usuarios del API https://api.escuelajs.co/api/v1/users.
 Para el funcionamiento se importo HttpClient la cual permite realizar peticiones http a servidores, este caso la API.
 En este servicio se creo el metodo getUsers el cual realiza una peticion GET al API para obtener los datos de los usuarios, posteriormente retorna estos datos obtenidos para que puedan ser usados posteriormente cuando se llame el metodo.
@@ -39,13 +40,24 @@ Se creo un componente user list con el comando `ng generate component components
 Este componente se encarga de mostrar una tabla con todos los usuarios. 
 Como se uso Angular Material para el dieseño se importaron los componentes necesarios para la tabla MatTableDataSource, MatTableModule, ademas se importo el servicio user y los componentes MatPaginator y MatPaginatorModule para agregar paginación y MatSort a la tabla
 
+![{B6C46656-4969-4D37-A325-DC805171A372}](https://github.com/user-attachments/assets/80c3981c-1774-4e5c-baa7-61dce15dc308)
+
 Para la creacion de la tabla se crearon las variables displayedColumns que contiene las columnas de la tabla, y otro dataSource que usa la clase MatTableDataSource que contiene los datos de la tabla y facilita el uso de paginacion y filtrado en angular material.
+
+![{75A0726E-1017-4676-BF89-A05695F12AFC}](https://github.com/user-attachments/assets/82650b3a-54e1-446a-80c9-ef22fa11fb95)
 
 El metodo ngOnInit se ejecuta al inicio del componente y ejecuta el metodo del servicio getUsers para obetner los usuario los cuales los almacenan como datos en dataSource para que se muestren en la tabla.
 
+![{A6DBAA2D-7523-4E02-8C5A-92AE3AB8E08C}](https://github.com/user-attachments/assets/e64ad92f-6f85-4acf-88e2-f2fff597c5fb)
+
 El metodo ngAfterView se ejecuta despues de que se cargo toda la vista del componente el cual agrega la funcionalida de paginado y filtro a la tabla.
 
+![{9FCF9696-FCD9-4FC0-863F-8963C3564BC0}](https://github.com/user-attachments/assets/87b323bb-938d-4641-acb6-7063ca3b9761)
+
 El metodo applyFilter es el que realiza el filtrado de la tabla de acuerdo a lo ingresado en el cuadro de texto del html
+
+![{6F0EB624-2DA9-4448-8097-1272AD5816AB}](https://github.com/user-attachments/assets/1b2664e8-46f1-419f-bb46-01f660a5eabd)
+![{BA90F7AA-6AC6-43A5-8A3B-0DAB62FA01EE}](https://github.com/user-attachments/assets/8c83997f-a919-4ab5-84e1-3d2dc04a01e6)
 
 En html del componente esta compuesto por un matinput para el filtro, una tabla usando mat-table de angular material la cual recibe el dataSource el cual contiene la lista de usuarios, y un matpaginator para la paginacion, todos componentes de angular material.
 
