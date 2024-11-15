@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-##¿Como se realizó el proyecto?
+## ¿Como se realizó el proyecto?
 
 Primero se creo el servicio user.service con `ng generate service` y es en donde se obtienen los datos de los usuarios del API https://api.escuelajs.co/api/v1/users para lo cual se importo HttpClient la cual permite realizar peticiones http a servidores, en este caso se creo un metodo getUsers la cual realiza una peticion GET al API y devuleve la información de los usuarios.
 
