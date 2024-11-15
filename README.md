@@ -74,7 +74,8 @@ Manda a llamar al método getUser que se declaró en el servicio UserService, y 
 ### ¿Para qué sirve el bucle *ngFor en Angular? Explica cómo se utiliza en este ejemplo.
 Es una herramienta que sirve para iterar en listas y colecciones de datos. En el código lo que hace es iterar sobre el arreglo de users, y para cada elemento o usuario de users (user) se creara una fila en la tabla con la etiqueta <tr> y en la fila se crearán 4 celdas con la etiqueta <td> las cuales contendrán el id, el nombre, el email y el rol respectivamente del usuario actual de la iteración. 
 Pese a esto en la realización de la actividad no se uso ya que se optó por usar material designe para el diseño, la cual ya incluye sus propias funciones para llenar la tabla.
-### ¿Qué ventajas tiene el uso de servicios en Angular para el consumo de APIs? Algunas ventajas que tiene es que nos permite tener un mejor control de la información, además al estar separado de los componentes nos permite una mejor reutilización de código ya que así no es necesario realizar solicitudes http cada que se requiera hacer uso del api, esto también facilita el mantenimiento puesto que permite una mejor organización.
+### ¿Qué ventajas tiene el uso de servicios en Angular para el consumo de APIs? 
+Algunas ventajas que tiene es que nos permite tener un mejor control de la información, además al estar separado de los componentes nos permite una mejor reutilización de código ya que así no es necesario realizar solicitudes http cada que se requiera hacer uso del api, esto también facilita el mantenimiento puesto que permite una mejor organización.
 ### ¿Por qué es importante separar la lógica de negocio de la lógica de presentación? 
 Es importante para lograr una aplicación más mantenible, escalable y flexible, y de esta forma facilitar el desarrollo y mantenimiento de la aplicación.
 ### ¿Qué otros tipos de datos o APIs podrías integrar en un proyecto como este? 
