@@ -26,13 +26,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## ¿Como se realizó el proyecto?
+# ¿Como se realizó el proyecto?
+## Servicio user
+Primero se creo el servicio user.service con el comando de CLI `ng generate service services/user`.
+![{5CAD6F62-F4E2-4D60-A047-12FA3C9D69CC}](https://github.com/user-attachments/assets/c84f6901-8fce-43ef-8ef7-d8d76aebc930)
+Este servicio se usa para obtener los datos de los usuarios del API https://api.escuelajs.co/api/v1/users.
+Para el funcionamiento se importo HttpClient la cual permite realizar peticiones http a servidores, este caso la API.
+En este servicio se creo el metodo getUsers el cual realiza una peticion GET al API para obtener los datos de los usuarios, posteriormente retorna estos datos obtenidos para que puedan ser usados posteriormente cuando se llame el metodo.
 
-Primero se creo el servicio user.service con `ng generate service` y es en donde se obtienen los datos de los usuarios del API https://api.escuelajs.co/api/v1/users para lo cual se importo HttpClient la cual permite realizar peticiones http a servidores, en este caso se creo un metodo getUsers la cual realiza una peticion GET al API y devuleve la información de los usuarios.
+## Componente user list
+Se creo un componente user list con el comando `ng generate component components/user-list`
+Este componente se encarga de mostrar una tabla con todos los usuarios. 
+Como se uso Angular Material para el dieseño se importaron los componentes necesarios para la tabla MatTableDataSource, MatTableModule, ademas se importo el servicio user y los componentes MatPaginator y MatPaginatorModule para agregar paginación y MatSort a la tabla
 
-despues se creo el componente user list con el comando `ng generate component` la cual contiene una tabla que contiene la lista de los usuarios. En este proyecto se usó angular material para añadir diseño a la tabla, angular material proporciona formas especificas para crear una tabla para esto se importi MatTableDataSource, MatTableModule para crear la tabla, MatPaginator y MatPaginatorModule para agregar paginación y MatSort para agregar un filtro a la tabla, ademas se imrpoto el servicio userService para poder obtener los usuarios del API.
-
-para la creacion de la tabla se crearon las variables displayedColumns que contiene las columnas de la tabla, y otro dataSource que usa la clase MatTableDataSource que contiene los datos de la tabla y facilita el uso de paginacion y filtrado en angular material.
+Para la creacion de la tabla se crearon las variables displayedColumns que contiene las columnas de la tabla, y otro dataSource que usa la clase MatTableDataSource que contiene los datos de la tabla y facilita el uso de paginacion y filtrado en angular material.
 
 El metodo ngOnInit se ejecuta al inicio del componente y ejecuta el metodo del servicio getUsers para obetner los usuario los cuales los almacenan como datos en dataSource para que se muestren en la tabla.
 
