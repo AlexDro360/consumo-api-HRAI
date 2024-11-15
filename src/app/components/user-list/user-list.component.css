@@ -1,0 +1,44 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005cbb;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #d7e3ff;
+    color: #005cbb;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
