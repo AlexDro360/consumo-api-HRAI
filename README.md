@@ -65,18 +65,18 @@ para usar el componente se importo en el archivo app.component.ts y se puso como
 
 # Preguntas
 
-## ¿Qué hace el método getUsers en este servicio? 
+### ¿Qué hace el método getUsers en este servicio? 
 Este método realiza una petición get al api especificado en apiUrl con la cual que se obtienen los usuarios, después retorna la respuesta del api, es decir, los usuarios.
-## ¿Por qué es necesario importar HttpClientModule? 
+### ¿Por qué es necesario importar HttpClientModule? 
 Permite realizar solicitudes http a servidores externos, en este caso a la api, permite usar los métodos get(), post(), put(), delete(), entre otros.
-## ¿Qué función cumple el método ngOnInit en el componente UserListComponent? 
+### ¿Qué función cumple el método ngOnInit en el componente UserListComponent? 
 Manda a llamar al método getUser que se declaró en el servicio UserService, y de esta forma obtener los usuarios, después los usuarios devueltos los guarda en el arreglo llamado users para su posterior uso.
-## ¿Para qué sirve el bucle *ngFor en Angular? Explica cómo se utiliza en este ejemplo.
+### ¿Para qué sirve el bucle *ngFor en Angular? Explica cómo se utiliza en este ejemplo.
 Es una herramienta que sirve para iterar en listas y colecciones de datos. En el código lo que hace es iterar sobre el arreglo de users, y para cada elemento o usuario de users (user) se creara una fila en la tabla con la etiqueta <tr> y en la fila se crearán 4 celdas con la etiqueta <td> las cuales contendrán el id, el nombre, el email y el rol respectivamente del usuario actual de la iteración. 
 Pese a esto en la realización de la actividad no se uso ya que se optó por usar material designe para el diseño, la cual ya incluye sus propias funciones para llenar la tabla.
-## ¿Qué ventajas tiene el uso de servicios en Angular para el consumo de APIs? Algunas ventajas que tiene es que nos permite tener un mejor control de la información, además al estar separado de los componentes nos permite una mejor reutilización de código ya que así no es necesario realizar solicitudes http cada que se requiera hacer uso del api, esto también facilita el mantenimiento puesto que permite una mejor organización.
-## ¿Por qué es importante separar la lógica de negocio de la lógica de presentación? 
+### ¿Qué ventajas tiene el uso de servicios en Angular para el consumo de APIs? Algunas ventajas que tiene es que nos permite tener un mejor control de la información, además al estar separado de los componentes nos permite una mejor reutilización de código ya que así no es necesario realizar solicitudes http cada que se requiera hacer uso del api, esto también facilita el mantenimiento puesto que permite una mejor organización.
+### ¿Por qué es importante separar la lógica de negocio de la lógica de presentación? 
 Es importante para lograr una aplicación más mantenible, escalable y flexible, y de esta forma facilitar el desarrollo y mantenimiento de la aplicación.
-## ¿Qué otros tipos de datos o APIs podrías integrar en un proyecto como este? 
+### ¿Qué otros tipos de datos o APIs podrías integrar en un proyecto como este? 
 Se podrían integrar APIs que incluya productos para vender y proveedores para crear un sistema para una tienda online, o una que incluya materias y profesores para una aplicación de gestión de materias de una escuela, todo depende del tipo de software que se creara y el uso que se le dará.
 
