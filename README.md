@@ -56,6 +56,12 @@ Es importante para lograr una aplicación más mantenible, escalable y flexible,
 Se podrían integrar APIs que incluya productos para vender y proveedores para crear un sistema para una tienda online, o una que incluya materias y profesores para una aplicación de gestión de materias de una escuela, todo depende del tipo de software que se creara y el uso que se le dará.
 
 
+# Resultado
+Resultado de la tabla final con los usuarios.
+
+![{C357BE1A-5D52-4896-92B1-91ADA4959D6A}](https://github.com/user-attachments/assets/603d496b-8967-4240-81e4-8a4069e9dcfa)
+
+![{54542922-1B13-40CB-A697-4A26C9CA3C29}](https://github.com/user-attachments/assets/6a04b850-e863-4976-8ee5-7592bb9ecb54)
 
 
 
